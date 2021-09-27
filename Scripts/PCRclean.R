@@ -112,10 +112,10 @@ print(paste("there are",
 #removes data input
 output_file = str_extract(pcr_data_file, "\\d{8}_Variant\\d{2}")
 
-write_csv(check, paste("data_output/", "idcheck_", output_file))
+write_csv(check, paste("data_output/", "idcheck_", output_file, ".csv", sep = ""))
 
 
-write_csv(pcr2, paste("data_output/", "sorted_pcr", output_file))
+write_csv(pcr2, paste("data_output/", "sorted_pcr", output_file, ".csv", sep = ""))
 
 
 
